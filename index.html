@@ -2,329 +2,696 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fashion Designer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="HWC Fashion School - Where creativity meets elegance. Custom tailoring, fashion training, and timeless designs in Lagos, Nigeria.">
+  <meta name="keywords" content="fashion school, fashion designer, custom tailoring, Lagos fashion, HWC Fashion">
+  <meta name="author" content="HWC Fashion School">
+  <title>HWC Fashion School | Where Creativity Meets Elegance</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">HWC</div>
+      <div class="preloader-bar"><span></span></div>
+    </div>
+  </div>
 
   <!-- Header -->
   <header>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="images/logo.jpg" alt="Your Brand Logo">
-      <h1>HWC FASHION SCHOOL</h1>
-    </div>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="HWC Fashion School Logo">
+        <div class="logo-text">
+          <span class="logo-main">HWC</span>
+          <span class="logo-sub">FASHION SCHOOL</span>
+        </div>
+      </div>
 
+      <button id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-     <!-- Hamburger Menu -->
-      <div id="hamburger" aria-label="Menu" aria-expanded="false">
-              <span></span>
-               <span></span>
-               <span></span>
-</div>
-
-
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#school">Fashion School</a></li>
-      <li><a href="#students">Graduated Students</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-
-  <!-- Hero -->
-  <!-- <div class="hero" id="home">
-    <div class="hero-text">
-      <h1>Where Creativity Meets Elegance</h1>
-      <p>Fashion design that tells your story beautifully.</p>
-      <a href="#portfolio" class="btn">View Collection</a>
-    </div>
-  </div> -->
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#school">Academy</a></li>
+        <li><a href="#students">Graduates</a></li>
+        <li><a href="#practicals">Student Work</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Hero Section -->
-<section class="hero" id="home">
-  <div class="hero-slideshow">
-    <img src="images/bg 3.jpg" alt="Fashion look 1" class="slide active">
-    <img src="images/bg 1.jpg" alt="Fashion look 3" class="slide">
-    <img src="images/image 2.jpg" alt="Fashion look 2" class="slide">
-    <img src="images/bg 7.jpg" alt="Fashion Look 3"  class="slide">
-    <img src="images/bg 4.jpg" alt="Fashion Look 3"  class="slide">
-    <img src="images/bg 2.jpg" alt="Fashion Look 3"  class="slide">
-    <img src="images/bg 5.jpg" alt="Fashion Look 3"  class="slide">
-    <img src="images/bg 6.jpg" alt="Fashion Look 3"  class="slide">
-    <!-- <img src="images/bg 12.jpg" alt="Fashion Look 3"  class="slide"> -->
-    <img src="images/bg 10.jpg" alt="Fashion Look 3"  class="slide">
-    <img src="images/bg 8.jpg" alt="Fashion Look 3"  class="slide">
-    <img src="images/bg 9.jpg" alt="Fashion Look 3"  class="slide">
-    <img src="images/bg 11.jpg" alt="Fashion Look 3"  class="slide">
-    
-  </div>
+  <section class="hero" id="home" aria-label="Hero slideshow">
+    <div class="hero-slideshow" aria-hidden="true">
+      <div class="slide active" style="background-image:url('images/bg 3.jpg')"></div>
+      <div class="slide" style="background-image:url('images/bg 1.jpg')"></div>
+      <div class="slide" style="background-image:url('images/image 2.jpg')"></div>
+      <div class="slide" style="background-image:url('images/bg 7.jpg')"></div>
+      <div class="slide" style="background-image:url('images/bg 4.jpg')"></div>
+      <div class="slide" style="background-image:url('images/bg 2.jpg')"></div>
+      <div class="slide" style="background-image:url('images/bg 5.jpg')"></div>
+      <div class="slide" style="background-image:url('images/bg\ 13.jpeg')"></div>
+      <div class="slide" style="background-image:url('images/bg 6.jpg')"></div>
+      <div class="slide" style="background-image:url('images/bg 10.jpg')"></div>
+      <div class="slide" style="background-image:url('images/bg 8.jpg')"></div>
+      <div class="slide" style="background-image:url('images/bg 9.jpg')"></div>
+      <div class="slide" style="background-image:url('images/bg 11.jpg')"></div>
+      
+    </div>
 
-  <div class="hero-text">
-    <h1>Where Creativity Meets Elegance</h1>
-    <p>Fashion design that tells your story beautifully.</p>
-    <a href="#portfolio" class="btn">View Collection</a>
-  </div>
-</section>
+    <div class="hero-overlay" aria-hidden="true"></div>
 
+    <div class="hero-content">
+      <p class="hero-eyebrow">Lagos · Nigeria</p>
+      <h1 class="hero-title">Where Creativity<br><em>Meets Elegance</em></h1>
+      <p class="hero-subtitle">Fashion design that tells your story beautifully.</p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary">View Collection</a>
+        <a href="#contact" class="btn btn-outline">Book a Session</a>
+      </div>
+    </div>
+
+    <!-- Slide indicators -->
+    <div class="slide-indicators" aria-label="Slide navigation" role="tablist">
+    </div>
+
+    <!-- Slide counter -->
+    <div class="slide-counter" aria-hidden="true">
+      <span id="currentSlideNum">01</span>
+      <span class="divider">/</span>
+      <span id="totalSlides">12</span>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
   <!-- About -->
-  <div class="section" id="about">
-    <h2>About the Designer</h2>
-    <p class="about-quote">"Elegance begins when you decide to be yourself." — H.W.C</p>
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="section-inner">
+      <div class="section-label">Our Story</div>
+      <h2 id="about-title">About the Designer</h2>
+      <blockquote class="about-quote">"Elegance begins when you decide to be yourself."<cite> — H.W.C</cite></blockquote>
 
-    <div class="about-content">
-      <img src="images/designer.jpg" alt="Designer at work">
-      <p>
-        H.W.C Fashion is a creative studio specializing in timeless designs that celebrate culture and elegance.
-        With years of craftsmanship and a passion for empowering style, we turn fabrics into confidence.
-      </p>
+      <div class="about-content">
+        <div class="about-image-wrapper">
+          <img src="images/designer.jpg" alt="HWC Fashion designer at work" loading="lazy">
+          <div class="about-image-accent" aria-hidden="true"></div>
+        </div>
+        <div class="about-text">
+          <p>
+            H.W.C Fashion is a creative studio specializing in timeless designs that celebrate culture and elegance.
+            With years of craftsmanship and a passion for empowering style, we turn fabrics into confidence.
+          </p>
+          <p>
+            Based in the heart of Lagos, we work with clients across Nigeria and beyond — crafting each piece with intentionality, artistry, and an unwavering commitment to quality.
+          </p>
+          <a href="#contact" class="btn btn-dark">Work With Us</a>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- Services -->
-  <div class="section" id="services">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <div class="box">
-        <h3>Custom Tailoring</h3>
-        <p>Elegant, made-to-measure outfits crafted with precision.</p>
-      </div>
-      
-      <div class="box">
-  <h3>
-    <a href="https://www.instagram.com/affordables_by_h.w.c_?igsh=MWd0Mm5xOG0xcGw4bg%3D%3D&utm_source=qr" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       style="text-decoration: none; color: inherit;">
-       Ready-to-Wear
-    </a>
-  </h3>
-  <p>Trendy and affordable collections for every occasion.</p>
-</div>
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="section-inner">
+      <div class="section-label">What We Offer</div>
+      <h2 id="services-title">Our Services</h2>
 
-      <div class="box">
-        <h3>Fashion Training</h3>
-        <p>Learn from experts at our fashion school — build your dream career.</p>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-bg" style="background-image:url('images/custom.jpg')" aria-hidden="true"></div>
+          <div class="service-body">
+            <div class="service-icon" aria-hidden="true"><i class="fas fa-cut"></i></div>
+            <h3>Custom Tailoring</h3>
+            <p>Elegant, made-to-measure outfits crafted with precision for every body and occasion.</p>
+            <a href="#contact" class="service-link">Enquire <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-bg" style="background-image:url('images/rtw.jpg')" aria-hidden="true"></div>
+          <div class="service-body">
+            <div class="service-icon" aria-hidden="true"><i class="fas fa-tshirt"></i></div>
+            <h3>
+              <a href="https://www.instagram.com/affordables_by_h.w.c_?igsh=MWd0Mm5xOG0xcGw4bg%3D%3D&utm_source=qr"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Visit our Ready-to-Wear Instagram page">
+                Ready-to-Wear
+              </a>
+            </h3>
+            <p>Trendy and affordable collections for every occasion — style made accessible.</p>
+            <a href="https://www.instagram.com/affordables_by_h.w.c_?igsh=MWd0Mm5xOG0xcGw4bg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="service-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-bg" style="background-image:url('images/training.jpg')" aria-hidden="true"></div>
+          <div class="service-body">
+            <div class="service-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Fashion Training</h3>
+            <p>Learn from experts at our fashion academy — build your dream career in design.</p>
+            <a href="#school" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Portfolio -->
-  <div class="section" id="portfolio">
-    <h2>Our Portfolio</h2>
+  <section class="section" id="portfolio" aria-labelledby="portfolio-title">
+    <div class="section-inner">
+      <div class="section-label">Our Work</div>
+      <h2 id="portfolio-title">Portfolio</h2>
 
-    <div class="portfolio-grid">
-      <div class="item">
-        <img src="images/image 1.jpg" alt="first image">
-        <h4>Bridal Elegance</h4>
-        <p>Luxurious lace gowns designed for timeless grace.</p>
+      <div class="portfolio-grid">
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap">
+            <img src="images/image 1.jpg" alt="Bridal Elegance outfit" loading="lazy">
+            <div class="portfolio-overlay" aria-hidden="true">
+              <span><i class="fas fa-expand-alt"></i></span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Bridal Elegance</h4>
+            <p>Luxurious lace gowns designed for timeless grace.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap">
+            <img src="images/image 2.jpg" alt="Award outfit" loading="lazy">
+            <div class="portfolio-overlay" aria-hidden="true"><span><i class="fas fa-expand-alt"></i></span></div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Award Outfit</h4>
+            <p>Effortless styles perfect for a red-carpet event.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap">
+            <img src="images/bg 7.jpg" alt="Corporate outfit" loading="lazy">
+            <div class="portfolio-overlay" aria-hidden="true"><span><i class="fas fa-expand-alt"></i></span></div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Corporate Outfit</h4>
+            <p>Luxury and stylish power dressing for the boardroom.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap">
+            <img src="images/image 4.jpg" alt="Birthday shoot outfit" loading="lazy">
+            <div class="portfolio-overlay" aria-hidden="true"><span><i class="fas fa-expand-alt"></i></span></div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Birthday Shoot</h4>
+            <p>Professional looks that blend style with confidence.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap">
+            <img src="images/image 5.jpg" alt="Bridal shower outfit" loading="lazy">
+            <div class="portfolio-overlay" aria-hidden="true"><span><i class="fas fa-expand-alt"></i></span></div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Bridal Shower</h4>
+            <p>Soft glam, bold confidence — bridal bliss in one look.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap">
+            <img src="images/asoebi.jpg" alt="Aso-Ebi style outfit" loading="lazy">
+            <div class="portfolio-overlay" aria-hidden="true"><span><i class="fas fa-expand-alt"></i></span></div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Aso-Ebi Style</h4>
+            <p>Bold, celebratory looks for Nigerian occasions.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap">
+            <img src="images/image 7.jpg" alt="Couples attire" loading="lazy">
+            <div class="portfolio-overlay" aria-hidden="true"><span><i class="fas fa-expand-alt"></i></span></div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Couples Attire</h4>
+            <p>Vibrant coordinated outfits perfect for couples.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap">
+            <img src="images/image 6.jpg" alt="Dinner glamour outfit" loading="lazy">
+            <div class="portfolio-overlay" aria-hidden="true"><span><i class="fas fa-expand-alt"></i></span></div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Dinner Glamour</h4>
+            <p>Stunning evening wear that turns heads at any event.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap">
+            <img src="images/two piece.jpg" alt="Corporate two-piece outfit" loading="lazy">
+            <div class="portfolio-overlay" aria-hidden="true"><span><i class="fas fa-expand-alt"></i></span></div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Corporate Two-Piece</h4>
+            <p>Sharp, polished corporate wear that commands the room.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap">
+            <img src="images/preg.jpg" alt="Pregnancy shoot outfit" loading="lazy">
+            <div class="portfolio-overlay" aria-hidden="true"><span><i class="fas fa-expand-alt"></i></span></div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Maternity Shoot</h4>
+            <p>Celebrating motherhood with stunning, flowing designs.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap">
+            <img src="images/ankara style.jpg" alt="Ankara outfit" loading="lazy">
+            <div class="portfolio-overlay" aria-hidden="true"><span><i class="fas fa-expand-alt"></i></span></div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Ankara Style</h4>
+            <p>Vibrant African print crafted into a modern silhouette.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <div class="portfolio-img-wrap">
+            <img src="images/street.jpg" alt="Casual wear" loading="lazy">
+            <div class="portfolio-overlay" aria-hidden="true"><span><i class="fas fa-expand-alt"></i></span></div>
+          </div>
+          <div class="portfolio-info">
+            <h4>Casual Wear</h4>
+            <p>Effortless streetwear that carries confidence every day.</p>
+          </div>
+        </article>
       </div>
+    </div>
+  </section>
 
-
-      <div class="item">
-        <img src="images/image 2.jpg" alt="second image">
-        <h4> Award Outfit </h4>
-        <p>Effortless styles perfect for an award event.</p>
-      </div>
-
-
-      <div class="item">
-        <img src="images/cop fit.jpg" alt="sixth image">
-         <h4>Corporate Outfit</h4> 
-        <p>Luxury and stylish for office wear.</p> 
-      </div>
-
-
-      <div class="item">
-        <img src="images/image 4.jpg" alt="fourth image">
-        <h4>Birthday Shoot</h4>
-        <p>Professional looks that blend style with confidence.</p>
-      </div>
-
-      <div class="item">
-        <img src="images/image 5.jpg" alt="fifth image">
-        <h4>Bridal Shower Outfit</h4>
-        <p>Soft glam, bold confidence — bridal bliss in one look</p>
-      </div>
-
-      <div class="item">
-        <img src="images/asoebi.jpg" alt="eighth image">
-        <h4> Aso-Ebi Style</h4>
-        <p>Bold and edgy looks for urban fashionistas.</p>
-      </div>
-
-    
-      <div class="item">
-        <img src="images/image 7.jpg" alt="seventh image">
-        <h4>Couples Attire</h4>
-        <p>Vibrant outfit perfect for couples.</p>
-      </div>
-
-      
-        <div class="item">
-        <img src="images/image 6.jpg" alt="third image">
-        <h4>Dinner Glamour</h4>
-        <p>Stunning evening wear that turns heads at any event.</p>
-      </div>
-
-        <div class="item">
-        <img src="images/two piece.jpg" alt="third image">
-        <h4>Corporate Two-piece Outfit</h4>
-        <p>Stunning corporate wear that gets the job done.</p>
-      </div>
-
-
-      <div class="item">
-        <img src="images/preg.jpg" alt="third image">
-        <h4>Pregnancy Shoot Outfit</h4>
-        <p>Stunning outfit for your pregnancy shoot.</p>
-      </div>
-
-      <!-- <div class="item">
-        <img src="images/corp 2 piece.jpg" alt="third image">
-        <h4>Corporate Jacket</h4>
-        <p>Stunning corporate jacket never goes wrong.</p>
-      </div> -->
-
-      <div class="item">
-        <img src="images/ankara style.jpg" alt="third image">
-        <h4>Ankara Outfit</h4>
-        <p> One of our stunning ankara style.</p>
-      </div>
-
-      <div class="item">
-        <img src="images/street.jpg" alt="third image">
-        <h4>Casual Wear</h4>
-        <p> Rock our street wear to any occasion.</p>
-      </div>
-
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close image viewer"><i class="fas fa-times"></i></button>
+    <button class="lightbox-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-inner">
+      <img src="" alt="" id="lightboxImg">
+      <p id="lightboxCaption"></p>
     </div>
   </div>
 
   <!-- Fashion School -->
-  <div class="section" id="school">
-    <h2>Fashion School</h2>
-    <p>
-      Our school equips aspiring designers with essential skills in pattern making, sewing, creativity, and business.
-      Join our next session and start your fashion journey today!
-    </p>
-    <a href="#contact" class="btn">Enroll Now</a>
-  </div>
+  <section class="school-section" id="school" aria-labelledby="school-title">
+    <div class="school-inner">
+      <div class="school-text">
+        <div class="section-label light">The Academy</div>
+        <h2 id="school-title">HWC Fashion Academy</h2>
+        <p>Our academy equips aspiring designers with essential skills in pattern making, sewing, creative direction, and fashion business. Join our next session and begin your journey.</p>
+        <ul class="school-features">
+          <li><i class="fas fa-check-circle"></i> Pattern Making & Draping</li>
+          <li><i class="fas fa-check-circle"></i> Garment Construction</li>
+          <li><i class="fas fa-check-circle"></i> Fashion Business & Branding</li>
+          <li><i class="fas fa-check-circle"></i> Personal Mentorship</li>
+        </ul>
+        <a href="#contact" class="btn btn-gold">Enroll Now</a>
+      </div>
+      <div class="school-image-wrap" aria-hidden="true">
+        <img src="images/training.jpg" alt="Fashion training in session" loading="lazy">
+      </div>
+    </div>
+  </section>
 
   <!-- Graduated Students -->
-  <div class="section" id="students">
-    <h2>Graduated Students</h2>
+  <section class="section" id="students" aria-labelledby="students-title">
+    <div class="section-inner">
+      <div class="section-label">Alumni</div>
+      <h2 id="students-title">Our Graduates</h2>
+      <p class="section-sub">Trained hands building fashion empires across Nigeria and beyond.</p>
 
-    <div class="students-grid">
+      <div class="students-grid">
+        <div class="student-card wide">
+          <img src="images/grad 8.jpg" alt="2023/2024 Graduates class photo" loading="lazy">
+          <div class="student-info">
+            <span class="student-batch">Class of 2023/2024</span>
+          </div>
+        </div>
 
-      <div class="box">
-        <img src="images/grad 8.jpg" alt="Graduated Student 4">
-        <p> 2023/2024 Graduates </p>
-      </div>
+        <div class="student-card">
+          <img src="images/grad 1.jpg" alt="Ayomikun Agbetuyi" loading="lazy">
+          <div class="student-info">
+            <h4>Ayomikun Agbetuyi</h4>
+            <span>Founder, AY Fashion House</span>
+          </div>
+        </div>
 
-      <div class="box">
-        <img src="images/grad 1.jpg" alt="Graduated Student 1">
-        <p>Ayomikun Agbetuyi - Founder, AY Fashion House</p>
-      </div>
+        <div class="student-card">
+          <img src="images/grad 2.jpg" alt="Alice Babarinde" loading="lazy">
+          <div class="student-info">
+            <h4>Alice Babarinde</h4>
+            <span>CEO, JJ Kids Fashion House</span>
+          </div>
+        </div>
 
-      <div class="box">
-        <img src="images/grad 2.jpg" alt="Graduated Student 2">
-        <p>Alice Babarinde - CEO, JJ Kids Fashion House</p>
-      </div>
+        <div class="student-card">
+          <img src="images/grad 3.jpg" alt="Oloyede M. Olasumbo" loading="lazy">
+          <div class="student-info">
+            <h4>Oloyede M. Olasumbo</h4>
+            <span>Freelance Fashion Stylist</span>
+          </div>
+        </div>
 
-      <div class="box">
-        <img src="images/grad 3.jpg" alt="Graduated Student 3">
-        <p> Oloyede M. Olasumbo - Freelance Fashion Stylist</p>
-      </div>
+        <div class="student-card">
+          <img src="images/grad 4.jpg" alt="Adebayo A. Oluwabukola" loading="lazy">
+          <div class="student-info">
+            <h4>Adebayo A. Oluwabukola</h4>
+            <span>Freelance Fashion Stylist</span>
+          </div>
+        </div>
 
-      <div class="box">
-        <img src="images/grad 4.jpg" alt="Graduated Student 4">
-        <p>Adebayo A. Oluwabukola - Freelance Fashion Stylist </p>
-      </div>
+        <div class="student-card">
+          <img src="images/grad 5.jpg" alt="Nwaigwe Chinonyerem" loading="lazy">
+          <div class="student-info">
+            <h4>Nwaigwe Chinonyerem</h4>
+            <span>CEO, JC Fashion</span>
+          </div>
+        </div>
 
+        <div class="student-card">
+          <img src="images/grad 6.jpg" alt="Somefun O. Omowunmi" loading="lazy">
+          <div class="student-info">
+            <h4>Somefun O. Omowunmi</h4>
+            <span>Freelance Fashion Stylist</span>
+          </div>
+        </div>
 
-      <div class="box">
-        <img src="images/grad 5.jpg" alt="Graduated Student 4">
-        <p>Nwaigwe Chinonyerem - CEO, JC Fashion </p>
-      </div>
-
-      <div class="box">
-        <img src="images/grad 6.jpg" alt="Graduated Student 4">
-        <p>Somefun O. Omowunmi - Freelance Fashion Stylist </p>
-      </div>
-
-      <div class="box">
-        <img src="images/grad 7.jpg" alt="Graduated Student 4">
-        <p> 2024/2025 Graduates </p>
+        <div class="student-card wide full">
+          <img src="images/grad 7.jpg" alt="2024/2025 Graduates class photo" loading="lazy">
+          <div class="student-info">
+            <span class="student-batch">Class of 2024/2025</span>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
+
+  <!-- Student Practicals -->
+  <section class="section" id="practicals" aria-labelledby="practicals-title">
+    <div class="section-inner">
+      <div class="section-label">Student Work</div>
+      <h2 id="practicals-title">Crafted by Our Students</h2>
+      <p class="section-sub">Real outfits. Real skill. Made right here in our studio during training.</p>
+
+      <div class="practicals-grid">
+
+        <article class="practical-item">
+          <div class="practical-img-wrap">
+            <img src="images/stu 4.jpeg" alt="Student practical - Ankara Gown" loading="lazy">
+            <div class="practical-overlay" aria-hidden="true"><span class="practical-tag">Ankara Gown</span></div>
+          </div>
+        </article>
+
+        <article class="practical-item">
+          <div class="practical-img-wrap">
+            <img src="images/stu 3.jpeg" alt="Student practical - Bridal Dress" loading="lazy">
+            <div class="practical-overlay" aria-hidden="true"><span class="practical-tag">Bridal Dress</span></div>
+          </div>
+        </article>
+
+        <article class="practical-item">
+          <div class="practical-img-wrap">
+            <img src="images/stu 1.jpeg" alt="Student practical - Corporate Blouse" loading="lazy">
+            <div class="practical-overlay" aria-hidden="true"><span class="practical-tag">Corporate Blouse</span></div>
+          </div>
+        </article>
+
+        <article class="practical-item">
+          <div class="practical-img-wrap">
+            <img src="images/stu 2.jpeg" alt="Student practical - Two-Piece Set" loading="lazy">
+            <div class="practical-overlay" aria-hidden="true"><span class="practical-tag">Two-Piece Set</span></div>
+          </div>
+        </article>
+
+        <article class="practical-item">
+          <div class="practical-img-wrap">
+            <img src="images/stu 1.jpeg" alt="Student practical - Aso-Ebi Style" loading="lazy">
+            <div class="practical-overlay" aria-hidden="true"><span class="practical-tag">Aso-Ebi Style</span></div>
+          </div>
+        </article>
+
+        <article class="practical-item">
+          <div class="practical-img-wrap">
+            <img src="images/stu 2.jpeg" alt="Student practical - Evening Wear" loading="lazy">
+            <div class="practical-overlay" aria-hidden="true"><span class="practical-tag">Jumpsuit Wear</span></div>
+          </div>
+        </article>
+
+        <article class="practical-item">
+          <div class="practical-img-wrap">
+            <img src="images/stu 2.jpeg" alt="Student practical - Casual Dress" loading="lazy">
+            <div class="practical-overlay" aria-hidden="true"><span class="practical-tag">Casual Dress</span></div>
+          </div>
+        </article>
+
+        <article class="practical-item">
+          <div class="practical-img-wrap">
+            <img src="images/str wear.jpeg" alt="Student practical - Traditional Attire" loading="lazy">
+            <div class="practical-overlay" aria-hidden="true"><span class="practical-tag">Traditional Attire</span></div>
+          </div>
+        </article>
+
+        <article class="practical-item">
+          <div class="practical-img-wrap">
+            <img src="images/stu 1.jpeg" alt="Student practical - Party Wear" loading="lazy">
+            <div class="practical-overlay" aria-hidden="true"><span class="practical-tag">Party Wear</span></div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="practicals-cta">
+        <p>Want to create outfits like these? Join our next training session.</p>
+        <a href="#contact" class="btn btn-dark">Enroll in the Academy</a>
+      </div>
+    </div>
+  </section>
 
   <!-- Reviews -->
-  <div class="section" id="reviews">
-    <h2>Clients’ Reviews</h2>
-    <div class="reviews-grid">
-      <div class="box">
-        <p>"My outfit was a dream come true — perfect fit and elegance!"</p>
-        <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=400&q=80" alt="Sarah T.">
-         <h4>- Sarah T.</h4>
+  <section class="section" id="reviews" aria-labelledby="reviews-title">
+    <div class="section-inner">
+      <div class="section-label">Testimonials</div>
+      <h2 id="reviews-title">Client Reviews</h2>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote>"My outfit was a dream come true — perfect fit and elegance! I've never felt more beautiful."</blockquote>
+          <div class="reviewer">
+            <img src="images/bg 3.jpg" alt="client 1" loading="lazy">
+            <div>
+              <strong>Mrs. Mercy</strong>
+              <span>Bridal Client</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card featured">
+          <div class="review-quote-icon" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
+          <div class="review-stars" aria-label="5 stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote>"Best designer I've worked with! Great attention to detail. Every stitch was perfect."</blockquote>
+          <div class="reviewer">
+            <img src="images/custom.jpg" alt="client 2" loading="lazy">
+            <div>
+              <strong>Mrs. Lady Lanre</strong>
+              <span>Event Client</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote>"HWC transformed my vision into reality. The quality and creativity are unmatched in Lagos."</blockquote>
+          <div class="reviewer">
+            <img src="images/str wear.jpeg" alt="Amaka N." loading="lazy">
+            <div>
+              <strong>DJ Diva </strong>
+              <span>Birthday Client</span>
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="box">
-        <p>"Best designer I’ve worked with! Great attention to detail."</p>
-        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=400&q=80" alt="Chika O.">
-        <h4>- Chika O.</h4>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact" aria-labelledby="contact-title">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <div class="section-label light">Get In Touch</div>
+        <h2 id="contact-title">Let's Create<br><em>Something Beautiful</em></h2>
+        <p>We'd love to hear from you. Reach out for collaborations, custom orders, enrollment inquiries, or just to say hello!</p>
+
+        <ul class="contact-details">
+          <li>
+            <a href="mailto:badmusgbolagun6@gmail.com" aria-label="Send email">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <span>badmusgbolagun6@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+2348186530495" aria-label="Call us">
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <span>+234 818 653 0495</span>
+            </a>
+          </li>
+          <li>
+            <span>
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span>Lagos, Nigeria</span>
+            </span>
+          </li>
+        </ul>
+
+        <div class="contact-socials">
+          <a href="https://www.instagram.com/hwclothings_?igsh=MXR4d3F5OXkxZXRubg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/share/1AMXf4deGG/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/2348186530495" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Amaka Johnson" required autocomplete="name">
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a subject</option>
+              <option value="Custom Tailoring">Custom Tailoring</option>
+              <option value="Ready-to-Wear">Ready-to-Wear</option>
+              <option value="School Enrollment">School Enrollment</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Other">Other</option>
+            </select>
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project or inquiry..." required></textarea>
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn btn-submit" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loading" aria-hidden="true"><i class="fas fa-circle-notch fa-spin"></i></span>
+          </button>
+          <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+            <i class="fas fa-check-circle"></i> Thank you! We'll be in touch soon.
+          </div>
+        </form>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- CONTACT SECTION -->
-<section class="contact" id="contact">
-  <h2>Contact Us</h2>
-  <p>We’d love to hear from you. Reach out for collaborations, inquiries, or just to say hi!</p>
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/logo.jpg" alt="HWC Logo" loading="lazy">
+          <div>
+            <span class="logo-main">HWC</span>
+            <span class="logo-sub">FASHION SCHOOL</span>
+          </div>
+        </div>
+        <p>Where creativity meets elegance.<br>Lagos, Nigeria.</p>
+      </div>
 
-  <div class="contact-container">
-    <div class="contact-info">
-      <p><strong>Email:</strong> badmusgbolagun6@gmail.com</p>
-      <p><strong>Phone:</strong> +234 818 653 0495</p>
-      <p><strong>Address:</strong> Lagos, Nigeria</p>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#school">Academy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/hwclothings_?igsh=MXR4d3F5OXkxZXRubg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/share/1AMXf4deGG/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/2348186530495" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-content">
-    <p>© 2025 Deji's Designs. All rights reserved.</p>
-
-    <div class="social-links">
-      <a href="https://www.instagram.com/hwclothings_?igsh=MXR4d3F5OXkxZXRubg%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/share/1AMXf4deGG/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://wa.me/2348186530495" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <div class="footer-bottom">
+      <p>© 2025 HWC Fashion School. All rights reserved. Designed with <i class="fas fa-heart" aria-hidden="true"></i> in Lagos.</p>
     </div>
-  </div>
-</footer>
+  </footer>
 
+  <!-- Back to Top Button -->
+  <button id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
 
-  <button id="backToTop">↑</button>
-
- <script src="script.js"></script>
-
- 
-
+  <script src="script.js"></script>
 </body>
 </html>
